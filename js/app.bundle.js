@@ -1505,7 +1505,7 @@ window.resetAllData = async function () {
   }
   changeTheme(state.theme);
   applyBackground();
-  if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js");
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register('./sw.js');
   await saveState();
   await window.calculateTodayPoints();
   render();
